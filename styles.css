@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Paleta de colores */
+:root {
+    --color-primario: #0d6efd;
+    --color-secundario: #6c757d;
+    --color-texto: #212529;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, white, lightblue);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--color-primario);
+    color: white;
+  }
+  
+  /* Títulos de sección */
+  section h2 {
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Tarjetas destacadas */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Miniaturas de la galería */
+  #galeria-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    margin-bottom: 15px;
+  }
+  
+  #galeria-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal */
+  .modal-body img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .img-modal {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  /* Formulario de contacto */
+  form .form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  form .btn {
+    border-radius: 10px;
+    background-color: var(--color-primario);
+    border: none;
+  }
+  
+  form .btn:hover {
+    background-color: #506c95;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--color-secundario);
+    color: white;
+    margin-top: 40px;
+  }
+
+  
+   /* Media Query para pantallas más pequeñas (celulares) */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+      margin: 10px; /* Reduce los márgenes */
+      text-align: center; /* Centra el texto */
+    }
+  
+    h1 {
+      font-size: 2em; /* Reduce el tamaño del encabezado */
+      margin-bottom: 15px;
+    }
+  
+    /* Aquí puedes agregar más estilos específicos para celulares */
+  }
