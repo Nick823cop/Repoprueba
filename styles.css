@@ -2,7 +2,7 @@
 
 /* Paleta de colores */
 :root {
-    --color-primario: #0d6efd;
+    --color-primario: #0c1016;
     --color-secundario: #6c757d;
     --color-texto: #212529;
   }
@@ -105,5 +105,4 @@
       margin-bottom: 15px;
     }
   
-    /* Aquí puedes agregar más estilos específicos para celulares */
   }
